@@ -5,9 +5,9 @@
 #define TRDS 4
 
 struct add {
-size_t start;
-size_t end;
-size_t tot;
+	size_t start;
+	size_t end;
+	size_t tot;
 };
 
 int func(void *arg)
