@@ -32,6 +32,7 @@ int main(int argc, char **argv)
    int ep = 0;
 
    if( argc != 2 ) { 
+      puts("An integer argument must be passed");
       exit(1); 
    }
 
@@ -51,7 +52,7 @@ int main(int argc, char **argv)
       gt += a[i].tot;
    }
    
-   printf("n*(n+1)/2 = %zu Grand Totla: %zu \n", in*(in+1)/2, gt);
+   printf("n*(n+1)/2 = %zu Grand Total: %zu \n", in*(in+1)/2, gt);
 
    return 0;
 }
