@@ -42,7 +42,7 @@ int main(int argc, char **argv)
    for(i=0;i<TRDS;i++) {
       a[i].start = i*(in/TRDS) + 1;
       if(i == (TRDS-1)) {
-         ep = in - TRDS*(in/TRDS); //In case of odd number, the last thread will extra addition
+         ep = in - TRDS*(in/TRDS); //In case of an odd number, the last thread will perform the extra addition
       }
       a[i].end = a[i].start + in/TRDS - 1 + ep;
       thrd_create(&t[i], func, &a[i]);
