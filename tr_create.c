@@ -36,7 +36,7 @@ int main(int argc, char **argv)
       exit(1); 
    }
 
-   size_t in = atoi(argv[1]);
+   size_t in = (size_t)atoi(argv[1]);
 
    for(i=0;i<TRDS;i++) {
       a[i].start = i*(in/TRDS) + 1;
