@@ -7,9 +7,9 @@
 thrd_t *p;
 
 struct add {
-	size_t start;
-	size_t end;
-	size_t tot;
+   size_t start;
+   size_t end;
+   size_t tot;
 };
 
 int func(void *arg)
@@ -19,7 +19,7 @@ int func(void *arg)
    v->tot = 0;
 
    if( thrd_equal(thrd_current(), *p) ) {
-	   printf("Found thread ID. [%zu, %zu] \n", v->start, v->end);
+      printf("Found thread ID. [%zu, %zu] \n", v->start, v->end);
    }
 
    for(i=v->start; i<=v->end; i++)
